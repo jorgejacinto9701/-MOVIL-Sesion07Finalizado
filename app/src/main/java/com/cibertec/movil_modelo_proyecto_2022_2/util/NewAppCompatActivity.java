@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cibertec.movil_modelo_proyecto_2022_2.R;
+import com.cibertec.movil_modelo_proyecto_2022_2.vista.consulta.EditorialConsultaActivity;
 import com.cibertec.movil_modelo_proyecto_2022_2.vista.registra.EditorialRegistraActivity;
 
 public class NewAppCompatActivity extends AppCompatActivity {
@@ -31,6 +32,11 @@ public class NewAppCompatActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.idMenuConsultaEditorial){
+            Intent intent = new Intent(this, EditorialConsultaActivity.class);
+            startActivity(intent);
+            return true;
+        }
 
 
 
